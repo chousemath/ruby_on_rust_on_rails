@@ -1,0 +1,8 @@
+<h1>Numerical Methods</h1>
+
+<%= form_for :numerical, url: factorial_path do |f| %>
+  <%= f.number_field :factorial %><br />
+  <%= f.submit "submit" %>
+<% end %>
+<br>
+<%= @factorial %>
