@@ -1,8 +1,13 @@
 <h1>Numerical Methods</h1>
 
+<h3>Calculating Factorial</h3>
 <%= form_for :numerical, url: factorial_path do |f| %>
   <%= f.number_field :factorial %><br />
   <%= f.submit "submit" %>
 <% end %>
 <br>
-<%= @factorial %>
+Ruby     result: <%= @factorial_rb  %><br/>
+Rust i32 result: <%= @factorial_i32 %><br/>
+Rust i64 result: <%= @factorial_i64 %><br/>
+Rust u32 result: <%= @factorial_u32 %><br/>
+Rust u64 result: <%= @factorial_u64 %>
